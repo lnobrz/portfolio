@@ -1,4 +1,5 @@
 import { Item } from "@/data/portfolio";
+import Image from "next/image";
 
 const PortfolioDetailsTitle = ({ portfolio }: { portfolio: Item }) => {
   return (
@@ -15,16 +16,19 @@ const PortfolioDetailsTitle = ({ portfolio }: { portfolio: Item }) => {
           </div>
         </div>
       </div>
-      {/* /.container */}
-      <img
+      <Image
         src="/images/shape/shape_172.svg"
         alt="shap"
         className="lazy-img shapes shape-two"
+        width={208}
+        height={135}
       />
-      <img
+      <Image
         src="/images/shape/shape_175.svg"
         alt="shap"
         className="lazy-img shapes shape-three"
+        width={110}
+        height={112}
       />
     </div>
   );

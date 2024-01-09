@@ -31,10 +31,7 @@ const Portfolio = () => {
                 Work.
               </h2>
             </div>
-            {/* /.title-style-five */}
           </div>
-          {/* End .col-lg-4 */}
-
           <div className="col-lg-8">
             <ul className="style-none text-center text-lg-end isotop-menu-wrapper g-control-nav-one">
               <li
@@ -70,10 +67,7 @@ const Portfolio = () => {
               </li>
             </ul>
           </div>
-          {/* End .col-8 */}
         </div>
-        {/* End .row */}
-
         <div className="grid-2column pt-50 lg-pt-20 row">
           <Gallery>
             {filteredItems.map((item, index) => (

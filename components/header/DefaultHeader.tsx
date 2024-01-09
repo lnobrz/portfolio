@@ -53,11 +53,9 @@ const DefaulHeader = () => {
               Contact us
             </Link>
           </div>{" "}
-          {/* /.right-widget */}
           <MainMenu />
         </div>
       </div>
-      {/* /.inner-content */}
     </header>
   );
 };

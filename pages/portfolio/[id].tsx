@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Item, items } from "@/data/portfolio";
 import PortfolioDetailsTitle from "../../components/portfolio/portfolio-details/PortfolioDetailsTitle";
+import Image from "next/image";
 
 const DynamicPortfolioDetails = () => {
   const router = useRouter();
@@ -36,35 +37,15 @@ const DynamicPortfolioDetails = () => {
   return (
     <>
       <Seo pageTitle="Portfolio Details" />
-      {/* <!-- 
-      =============================================
-      Theme Default Menu
-      ============================================== 	
-      --> */}
       <DefaulHeader />
-
-      {/* 
-        =============================================
-        Feature Section Fifty One
-        ============================================== 
-        */}
       {portfolio && <PortfolioDetailsTitle portfolio={portfolio} />}
-
-      {/* 
-			=============================================
-				Portfolio Details Two
-			============================================== 
-			*/}
       <div className="portfolio-details-two pt-70 pb-50 lg-pb-10 md-pt-10">
         <div className="project-desctiption">
           <div className="container">
             <div className="row">
               <div className="col-lg-8" data-aos="fade-right">
-                <ProjectSlide slide={portfolio} />
-                {/* /#gallery-carousel */}
+                {portfolio && <ProjectSlide slide={portfolio} />}
               </div>
-              {/* End .col-lg-8 */}
-
               <div className="col-lg-4" data-aos="fade-left">
                 <div className="sidebar ms-xl-5">
                   <h3 className="mb-20">About</h3>
@@ -72,17 +53,12 @@ const DynamicPortfolioDetails = () => {
                     The Internet advertising famous today behaved lately.
                   </p>
                   <div className="row">
-                    <ProjectDetails details={portfolio} />
+                    {portfolio && <ProjectDetails details={portfolio} />}
                   </div>
-                  {/* End .row */}
-
                   <SocialShare />
                 </div>
               </div>
-              {/* End col-lg-4 */}
             </div>
-            {/* End .row */}
-
             <div className="col-xl-9  mt-120 lg-mt-80">
               <div
                 className="title-style-twelve mb-45 lg-mb-30"
@@ -93,7 +69,6 @@ const DynamicPortfolioDetails = () => {
                 </div>
                 <h2 className="main-title fw-500 tx-dark">About Rodpen</h2>
               </div>
-              {/* /.title-style-twelve */}
               <p data-aos="fade-up">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -120,7 +95,6 @@ const DynamicPortfolioDetails = () => {
                       Find out the design solution.
                     </h2>
                   </div>
-                  {/* /.title-style-twelve */}
                 </div>
               </div>
               <p data-aos="fade-up">
@@ -148,8 +122,6 @@ const DynamicPortfolioDetails = () => {
                 </div>
                 <h2 className="main-title fw-500 tx-dark">Final Result</h2>
               </div>
-              {/* /.title-style-twelve */}
-
               <p data-aos="fade-up">
                 Content creators and human resources personnel are able to
                 seamlessly update the website through graphical interfaces, and
@@ -165,8 +137,6 @@ const DynamicPortfolioDetails = () => {
                 habitasse platea dictumst.
               </p>
             </div>
-            {/* End col-xl-9 */}
-
             <div className="project-pagination m-auto pt-100 lg-pt-50 sm-pt-10">
               <div className="row gx-xxl-5">
                 <div className="col-sm-6">
@@ -174,10 +144,12 @@ const DynamicPortfolioDetails = () => {
                     className="arrow-block position-relative zn2 mt-20"
                     data-aos="fade-right"
                   >
-                    <img
+                    <Image
                       src="/images/media/img_92.jpg"
                       alt="media"
                       className="lazy-img w-100"
+                      width={920}
+                      height={600}
                     />
                     <div className="hover-content tran3s position-absolute d-flex flex-column align-items-center justify-content-center">
                       <div className="text-white fw-500 pg-title">
@@ -190,21 +162,19 @@ const DynamicPortfolioDetails = () => {
                         <i className="bi bi-arrow-left" />
                       </a>
                     </div>
-                    {/* /.hover-content */}
                   </div>
-                  {/* /.arrow-block */}
                 </div>
-                {/* End .col-6 */}
-
                 <div className="col-sm-6">
                   <div
                     className="arrow-block position-relative zn2 mt-20"
                     data-aos="fade-left"
                   >
-                    <img
+                    <Image
                       src="/images/media/img_93.jpg"
                       alt="media"
                       className="lazy-img w-100"
+                      width={820}
+                      height={600}
                     />
                     <div className="hover-content tran3s position-absolute d-flex flex-column align-items-center justify-content-center">
                       <div className="text-white fw-500 pg-title">
@@ -217,34 +187,14 @@ const DynamicPortfolioDetails = () => {
                         <i className="bi bi-arrow-right" />
                       </a>
                     </div>
-                    {/* /.hover-content */}
                   </div>
-                  {/* /.arrow-block */}
                 </div>
-                {/* End .col-6 */}
               </div>
-              {/* End .row */}
             </div>
-            {/* /.project-pagination */}
           </div>
-          {/* End .container */}
         </div>
-        {/* /.project-desctiption */}
       </div>
-      {/* /.project-details */}
-
-      {/*
-			=====================================================
-				Fancy Short Banner Twelve
-			=====================================================
-			*/}
       <CallToAction />
-
-      {/* 
-        =============================================
-        Contact Section One
-        ============================================== 
-        */}
       <DefaultFooter />
     </>
   );

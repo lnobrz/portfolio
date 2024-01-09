@@ -7,7 +7,6 @@ const Skills = () => {
     { name: "Marketing", bgColor: "#F9EDFF" },
     { name: "Great Support", bgColor: "#F0F9E0" },
     { name: "Safe", bgColor: "#FFF0F0" },
-    // Add more skills here as needed
   ];
 
   return (

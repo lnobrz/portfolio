@@ -7,11 +7,11 @@ const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 10) {
-      setNavbar(true);
-    } else {
+    if (window.scrollY <= 10) {
       setNavbar(false);
+      return;
     }
+    setNavbar(true);
   };
 
   useEffect(() => {
@@ -39,22 +39,9 @@ const Header = () => {
               />
             </Link>
           </div>
-          <div className="right-widget d-flex align-items-center ms-auto ms-lg-0 order-lg-3">
-            <button
-              className="sidebar-nav-button d-none d-lg-block"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-            >
-              <span></span>
-            </button>
-          </div>
-          {/* /.right-widget */}
           <PortfolioMenu />
         </div>
       </div>
-      {/* /.inner-content */}
     </header>
   );
 };

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Portfolio } from "./types";
+import { Item } from "@/data/portfolio";
 
-const ProjectSlide = ({ slide }: { slide: Portfolio }) => {
+const ProjectSlide = ({ slide }: { slide: Item }) => {
   const images = [slide?.image ?? "", slide?.image ?? "", slide?.image ?? ""];
 
   return (
@@ -27,8 +27,6 @@ const ProjectSlide = ({ slide }: { slide: Portfolio }) => {
           </div>
         ))}
       </div>
-      {/* End carousel-inner */}
-
       <button
         className="carousel-control-prev"
         type="button"
@@ -38,8 +36,6 @@ const ProjectSlide = ({ slide }: { slide: Portfolio }) => {
         <i className="bi bi-chevron-left"></i>
         <span className="visually-hidden">Previous</span>
       </button>
-      {/* End prev */}
-
       <button
         className="carousel-control-next"
         type="button"
@@ -49,7 +45,6 @@ const ProjectSlide = ({ slide }: { slide: Portfolio }) => {
         <i className="bi bi-chevron-right"></i>
         <span className="visually-hidden">Next</span>
       </button>
-      {/* End next */}
     </div>
   );
 };

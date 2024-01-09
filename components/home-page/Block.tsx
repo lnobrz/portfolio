@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Block = () => {
   const blocks = [
     {
@@ -31,11 +33,16 @@ const Block = () => {
             style={{ backgroundColor: block.bgColor }}
           >
             <div className="icon d-flex align-items-end justify-content-center">
-              <img src={block.iconSrc} alt="icon" className="lazy-img" />
+              <Image
+                src={block.iconSrc}
+                alt="icon"
+                className="lazy-img"
+                width={65}
+                height={64}
+              />
             </div>
             <h4 className="mt-55 lg-mt-30">{block.title}</h4>
           </div>
-          {/* /.card-style-six */}
         </div>
       ))}
     </>

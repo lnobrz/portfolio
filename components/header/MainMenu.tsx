@@ -30,8 +30,6 @@ const MainMenu = () => {
       >
         <span />
       </button>
-      {/* End mobile collapse menu */}
-
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="d-block d-lg-none">
@@ -46,11 +44,8 @@ const MainMenu = () => {
               </Link>
             </div>
           </li>
-          {/* End li */}
-
           <li className="nav-item dropdown mega-dropdown-md">
             <a
-              // className="nav-link dropdown-toggle active-menu"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -63,8 +58,6 @@ const MainMenu = () => {
                   ? "nav-link dropdown-toggle active-menu"
                   : "nav-link dropdown-toggle"
               }
-
-              // style={{color:'green'}}
             >
               Home
             </a>
@@ -104,11 +97,8 @@ const MainMenu = () => {
               </li>
             </ul>
           </li>
-          {/* End li (home mega menu) */}
-
           <li className="nav-item  dropdown">
             <a
-              // className="nav-link dropdown-toggle"
               className={
                 pagesItems.some((menu) =>
                   menu.subItems.some((elm) => isActive(elm.link))
@@ -130,7 +120,6 @@ const MainMenu = () => {
               {pagesItems.map((item, index) => (
                 <li className="dropdown-submenu dropdown" key={index}>
                   <a
-                    // className="dropdown-item dropdown-toggle"
                     data-bs-toggle="dropdown"
                     data-bs-auto-close="outside"
                     aria-expanded="false"
@@ -161,11 +150,8 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>
-          {/* End li (pages) */}
-
           <li className="nav-item dropdown">
             <a
-              // className="nav-link dropdown-toggle"
               className={
                 portfolioItems.some((elm) => isActive(elm.link))
                   ? "nav-link dropdown-toggle active-menu"
@@ -194,11 +180,8 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>
-          {/* End li (portfolio) */}
-
           <li className="nav-item dropdown">
             <a
-              // className="nav-link dropdown-toggle"
               className={
                 blogItems.some((elm) => isActive(elm.link))
                   ? "nav-link dropdown-toggle active-menu"
@@ -227,8 +210,6 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>
-          {/* End li (blog) */}
-
           <li className="nav-item dropdown">
             <a
               className={
@@ -259,11 +240,7 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>
-          {/* End li (contact) */}
         </ul>
-        {/* End ul */}
-
-        {/* Mobile Content */}
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-70">
             <Link
@@ -274,7 +251,6 @@ const MainMenu = () => {
             </Link>
           </div>
         </div>
-        {/* /.mobile-content */}
       </div>
     </nav>
   );

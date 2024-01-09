@@ -9,41 +9,18 @@ import Header from "@/components/home-page/Header";
 import Hero from "@/components/home-page/Hero";
 import Portfolio from "@/components/home-page/Portfolio";
 import ProjectBanner from "@/components/home-page/ProjectBanner";
-import Sidebar from "@/components/home-page/Sidebar";
 import Skills from "@/components/home-page/Skills";
 import Testimonial from "@/components/home-page/Testimonial";
 import Tools from "@/components/home-page/Tools";
 import Social from "@/components/home-page/Social";
+import Image from "next/image";
 
 const Home = () => {
   return (
     <>
       <Seo pageTitle="Persoanl Portfolio" />
-
-      {/* <!-- 
-        =============================================
-        Sidebar Nav
-        ============================================== 
-        --> */}
-      <Sidebar />
-
-      {/* <!--  =============================================
-        Theme Header4 Menu
-        ============================================== 	--> */}
       <Header />
-
-      {/* <!-- 
-			=============================================
-				Theme Hero Banner
-			============================================== 
-			--> */}
       <Hero />
-
-      {/* 
-			=============================================
-				Feature Section Twelve
-			============================================== 
-			*/}
       <div
         className="fancy-feature-twelve position-relative mt-300 xl-mt-200 md-mt-120"
         id="s2"
@@ -62,52 +39,41 @@ const Home = () => {
               </h2>
             </div>
           </div>
-          {/* End .row */}
-
           <div className="block-wrapper md-mt-10">
             <div className="row gx-xxl-5">
               <Block />
             </div>
           </div>
-          {/* /.block-wrapper */}
         </div>
-        {/* /.container */}
       </div>
-
-      {/* 
-			=============================================
-				Portfolio Gallery One
-			============================================== 
-			*/}
       <div
         className="portfolio-gallery-one position-relative mt-150 pt-100 xl-pt-50 md-mt-80"
         id="s3"
         data-aos="fade-up"
       >
-        <img
+        <Image
           src="/images/shape/shape_60.svg"
           alt="shape media"
           className="lazy-img shapes shape-one"
+          width={20}
+          height={20}
         />
-        <img
+        <Image
           src="/images/shape/shape_61.svg"
           alt="shape media"
           className="lazy-img shapes shape-two"
+          width={20}
+          height={20}
         />
-        <img
+        <Image
           src="/images/shape/shape_62.svg"
           alt="shape media"
           className="lazy-img shapes shape-three"
+          width={20}
+          height={20}
         />
         <Portfolio />
-        {/* /.container */}
       </div>
-
-      {/* 
-			=============================================
-				Feature Section Thirteen
-			============================================== 
-			*/}
       <div
         className="fancy-feature-thirteen position-relative mt-250 mb-150 lg-mt-120 lg-mb-100"
         id="s4"
@@ -132,11 +98,8 @@ const Home = () => {
                   &amp; skills.
                 </h2>
               </div>
-              {/* /.title-style-five */}
             </div>
           </div>
-          {/* End skill */}
-
           <div className="row">
             <div
               className="col-xxl-5 col-lg-6 "
@@ -159,8 +122,6 @@ const Home = () => {
               <Awards />
             </div>
           </div>
-          {/* End .row */}
-
           <div className="row">
             <div className="col-lg-3 col-sm-6 " data-aos="fade-up">
               <h3 className="block-title fw-500 tx-dark pb-30 mt-150 md-pb-20 md-mt-60">
@@ -168,8 +129,6 @@ const Home = () => {
               </h3>
               <Education />
             </div>
-            {/* End .col */}
-
             <div
               className="col-lg-3 col-sm-6 ps-xl-5"
               data-aos="fade-up"
@@ -180,62 +139,53 @@ const Home = () => {
               </h3>
               <Tools />
             </div>
-            {/* End tools */}
-
             <div
               className="col-lg-6 col-md-7 col-sm-10 m-auto"
               data-aos="fade-up"
               data-aos-delay="400"
             >
               <ProjectBanner />
-              {/* /.img-meta */}
             </div>
           </div>
         </div>
       </div>
-
-      {/* 
-			=============================================
-				Counter Section One
-			============================================== 
-			*/}
       <div className="p-30">
         <div className="counter-section-one position-relative pt-80 pb-100 lg-pt-50 lg-pb-60">
-          <img
+          <Image
             src="/images/shape/shape_64.svg"
             alt="shape"
             className="lazy-img shapes shape-one"
+            width={20}
+            height={20}
           />
-          <img
+          <Image
             src="/images/shape/shape_65.svg"
             alt="shape"
             className="lazy-img shapes shape-two"
+            width={20}
+            height={20}
           />
-          <img
+          <Image
             src="/images/shape/shape_66.svg"
             alt="shape"
             className="lazy-img shapes shape-three"
+            width={20}
+            height={20}
           />
-          <img
+          <Image
             src="/images/shape/shape_67.svg"
             alt="shape"
             className="lazy-img shapes shape-four"
+            width={20}
+            height={20}
           />
           <div className="container">
             <div className="row">
               <Counter />
             </div>
           </div>
-          {/* /.container */}
         </div>
-        {/* /.counter-section-one */}
       </div>
-
-      {/*
-			=====================================================
-			Feedback Section Four
-			=====================================================
-			*/}
       <div className="feedback-section-four position-relative mt-150 lg-mt-120">
         <div className="container">
           <div
@@ -254,40 +204,35 @@ const Home = () => {
               </span>
             </h2>
           </div>
-          {/* /.title-style-five */}
         </div>
-        {/* End .container */}
-
         <div className="slider-wrapper p-30">
           <div className="feedback_slider_four">
             <Testimonial />
           </div>
-          {/* /.feedback_slider_three */}
         </div>
-        {/* /.slider-wrapper */}
       </div>
-
-      {/*
-			=====================================================
-				Fancy Short Banner Five
-			=====================================================
-			*/}
       <div className="fancy-short-banner-five p-30 mt-110" id="s5">
         <div className="bg-wrapper position-relative pt-180 pb-140 lg-pt-80 lg-pb-80">
-          <img
+          <Image
             src="/images/shape/shape_68.svg"
             alt="shape"
             className="lazy-img shapes shape-one"
+            width={20}
+            height={20}
           />
-          <img
+          <Image
             src="/images/shape/shape_69.svg"
             alt="shape"
             className="lazy-img shapes shape-two"
+            width={20}
+            height={20}
           />
-          <img
+          <Image
             src="/images/shape/shape_70.svg"
             alt="shape"
             className="lazy-img shapes shape-three"
+            width={20}
+            height={20}
           />
           <div className="r-shape-one position-absolute" />
           <div className="container">
@@ -312,33 +257,27 @@ const Home = () => {
                   <div className="form-style-one md-mt-40">
                     <ContactForm />
                   </div>
-                  {/* /.form-style-one */}
                 </div>
               </div>
             </div>
-            {/* /.innner-content */}
           </div>
         </div>
-        {/* /.bg-wrapper */}
       </div>
-
-      {/*
-			=====================================================
-				Footer
-			=====================================================
-			*/}
       <div className="footer-style-four position-relative">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-4 mb-30 order-lg-0">
               <div className="logo d-flex justify-content-center justify-content-lg-start">
                 <Link href="/">
-                  <img src="/images/logo/logo_04.png" alt="" width={77} />
+                  <Image
+                    src="/images/logo/logo_04.png"
+                    alt=""
+                    width={77}
+                    height={24}
+                  />
                 </Link>
               </div>
             </div>
-            {/* End .col-lg-4 */}
-
             <div className="col-lg-4 mb-30 d-flex justify-content-center justify-content-lg-end order-lg-3">
               <a
                 href="mailto:support@jano.com"
@@ -350,14 +289,10 @@ const Home = () => {
                 <span>support@jano.com</span>
               </a>
             </div>
-            {/* End .col-lg-4 */}
-
             <div className="col-lg-4 mb-30 order-lg-2">
               <Social />
             </div>
-            {/* End .col-lg-4 */}
           </div>
-          {/* End .row */}
         </div>
       </div>
     </>

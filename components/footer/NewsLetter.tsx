@@ -2,8 +2,7 @@ import { FormEvent } from "react";
 
 const NewsLetter = () => {
   const handleSubmit = (event: FormEvent) => {
-    event.preventDefault(); // prevent default form submission behavior
-    // handle form submission logic
+    event.preventDefault();
   };
 
   return (

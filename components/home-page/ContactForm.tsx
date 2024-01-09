@@ -3,7 +3,6 @@ import { FormEvent } from "react";
 const ContactForm = () => {
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    // Your form submission logic here
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -20,8 +19,6 @@ const ContactForm = () => {
             <div className="help-block with-errors" />
           </div>
         </div>
-        {/* End .col-12 */}
-
         <div className="col-12">
           <div className="input-group-meta form-group mb-50">
             <input
@@ -34,8 +31,6 @@ const ContactForm = () => {
             <div className="help-block with-errors" />
           </div>
         </div>
-        {/* End .col-12 */}
-
         <div className="col-12">
           <div className="input-group-meta form-group mb-30">
             <textarea
@@ -48,8 +43,6 @@ const ContactForm = () => {
             <div className="help-block with-errors" />
           </div>
         </div>
-        {/* End .col-12 */}
-
         <div className="col-12">
           <button
             type="submit"
@@ -58,7 +51,6 @@ const ContactForm = () => {
             Send Message
           </button>
         </div>
-        {/* End .col-12 */}
       </div>
     </form>
   );

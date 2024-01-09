@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 
 const Testimonial = () => {
   const settings = {
@@ -74,7 +75,7 @@ const Testimonial = () => {
         <div className="item" key={testimonial.id}>
           <div className="feedback-block-four position-relative">
             <div className="icon rounded-circle d-flex align-items-center justify-content-center">
-              <img src={testimonial.icon} alt="icon" />
+              <Image src={testimonial.icon} alt="icon" width={24} height={22} />
             </div>
             <p className="tx-dark">{testimonial.content}</p>
             <div className="d-flex align-items-center justify-content-between">

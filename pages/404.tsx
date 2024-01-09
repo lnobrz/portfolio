@@ -7,19 +7,7 @@ const Pricing = () => {
   return (
     <>
       <Seo pageTitle="404" />
-
-      {/* <!-- 
-      =============================================
-      Theme Default Menu
-      ============================================== 	
-      --> */}
       <DefaulHeader />
-
-      {/* 
-			=============================================
-			Error Page
-			============================================== 
-			*/}
       <div className="error-page-content d-flex align-items-center justify-content-center">
         <div className="container">
           <div className="row">
@@ -42,8 +30,6 @@ const Pricing = () => {
             className="m-auto"
           />
         </div>
-        {/* End .container */}
-
         <Image
           width={1915}
           height={674}
@@ -52,7 +38,6 @@ const Pricing = () => {
           className="shapes shape-one w-100"
         />
       </div>
-      {/* /.error-page-content */}
     </>
   );
 };

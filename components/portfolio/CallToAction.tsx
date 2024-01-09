@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const CallToAction = () => {
   return (
@@ -17,12 +18,16 @@ const CallToAction = () => {
                   Have Any Project? <br />
                   <span className="position-relative">
                     Let’s Talk{" "}
-                    <img src="/images/shape/shape_132.svg" alt="shape" />
+                    <Image
+                      src="/images/shape/shape_132.svg"
+                      alt="shape"
+                      width={221}
+                      height={7}
+                    />
                   </span>
                   &amp; Grow your Business
                 </h2>
               </div>
-              {/* /.title-style-ten */}
               <p
                 className="text-lg mt-45 mb-55 lg-mb-30 lg-mt-40"
                 data-aos="fade-up"
