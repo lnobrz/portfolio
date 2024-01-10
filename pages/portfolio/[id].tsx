@@ -1,6 +1,4 @@
 import Seo from "../../components/common/Seo";
-import DefaulHeader from "@/components/header/DefaultHeader";
-import DefaultFooter from "@/components/footer/DefaultFooter";
 import SocialShare from "@/components/portfolio/portfolio-details/SocialShare";
 import ProjectDetails from "@/components/portfolio/portfolio-details/ProjectDetails";
 import ProjectSlide from "@/components/portfolio/portfolio-details/ProjectSlide";
@@ -11,6 +9,8 @@ import { useEffect, useState } from "react";
 import { Item, items } from "@/data/portfolio";
 import PortfolioDetailsTitle from "../../components/portfolio/portfolio-details/PortfolioDetailsTitle";
 import Image from "next/image";
+import Header from "@/components/home-page/Header";
+import Footer from "@/components/home-page/Footer";
 
 const DynamicPortfolioDetails = () => {
   const router = useRouter();
@@ -37,7 +37,7 @@ const DynamicPortfolioDetails = () => {
   return (
     <>
       <Seo pageTitle="Portfolio Details" />
-      <DefaulHeader />
+      <Header />
       {portfolio && <PortfolioDetailsTitle portfolio={portfolio} />}
       <div className="portfolio-details-two pt-70 pb-50 lg-pb-10 md-pt-10">
         <div className="project-desctiption">
@@ -195,7 +195,7 @@ const DynamicPortfolioDetails = () => {
         </div>
       </div>
       <CallToAction />
-      <DefaultFooter />
+      <Footer />
     </>
   );
 };
