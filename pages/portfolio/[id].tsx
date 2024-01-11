@@ -1,21 +1,18 @@
 import Seo from "../../components/common/Seo";
-import SocialShare from "@/components/portfolio/portfolio-details/SocialShare";
-import ProjectDetails from "@/components/portfolio/portfolio-details/ProjectDetails";
 import ProjectSlide from "@/components/portfolio/portfolio-details/ProjectSlide";
 import CallToAction from "@/components/portfolio/CallToAction";
-import PortfolioGallery from "@/components/portfolio/portfolio-details/PortfolioGallery";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Item, items } from "@/data/portfolio";
 import PortfolioDetailsTitle from "../../components/portfolio/portfolio-details/PortfolioDetailsTitle";
-import Image from "next/image";
-import Header from "@/components/home-page/Header/Header";
 import Footer from "@/components/home-page/Footer";
 import ProjectAboutSection from "@/components/portfolio/sections/ProjectAboutSection";
 import ProjectResumeSection from "@/components/portfolio/sections/ProjectResumeSection";
 import ProjectDetailsSection from "@/components/portfolio/sections/ProjectDetailsSection";
 import ProjectResultSection from "@/components/portfolio/sections/ProjectResultSection";
 import ProjectsSliderSection from "@/components/portfolio/sections/ProjectsSliderSection";
+import PortfolioGalleryContainer from "@/components/portfolio/portfolio-details/PortfolioGallery/PortfolioGalleryContainer";
+import HeaderContainer from "@/components/home-page/Header/HeaderContainer";
 
 const DynamicPortfolioDetails = () => {
   const router = useRouter();
@@ -42,7 +39,7 @@ const DynamicPortfolioDetails = () => {
   return (
     <>
       <Seo pageTitle="Portfolio Details" />
-      <Header />
+      <HeaderContainer />
       {portfolio && <PortfolioDetailsTitle portfolio={portfolio} />}
       <div className="portfolio-details-two pt-70 pb-50 lg-pb-10 md-pt-10">
         <div className="project-desctiption">
@@ -54,7 +51,7 @@ const DynamicPortfolioDetails = () => {
             <div className="col-xl-9  mt-120 lg-mt-80">
               <ProjectAboutSection />
               <ProjectDetailsSection />
-              <PortfolioGallery />
+              <PortfolioGalleryContainer />
               <ProjectResultSection />
             </div>
             <ProjectsSliderSection />

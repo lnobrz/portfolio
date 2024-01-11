@@ -1,6 +1,6 @@
 import { Item } from "@/data/portfolio";
 import ProjectDetails from "../portfolio-details/ProjectDetails";
-import SocialShare from "../portfolio-details/SocialShare";
+import SocialShare from "../portfolio-details/SocialShare/SocialShare";
 
 const ProjectResumeSection = ({ portfolio }: { portfolio: Item }) => {
   return (
