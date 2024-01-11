@@ -2,7 +2,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import "../styles/index.scss";
-import ScrollToTop from "../components/common/ScrollTop";
+import ScrollTopContainer from "@/components/common/ScrollTop/ScrollTopContainer";
 import { AppProps } from "next/app";
 
 if (typeof window !== "undefined") {
@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="main-page-wrapper">
       <Component {...pageProps} />
-      <ScrollToTop />
+      <ScrollTopContainer />
     </div>
   );
 }

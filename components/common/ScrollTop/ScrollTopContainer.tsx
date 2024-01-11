@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import ScrollToTop from "./ScrollTop";
 
-export default function ScrollToTop() {
+const ScrollTopContainer = () => {
   const [isVisible, setIsVisible] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -23,15 +25,7 @@ export default function ScrollToTop() {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  return (
-    <>
-      {isVisible && (
-        <>
-          <div className="scroll-top" onClick={scrollToTop}>
-            <i className="bi bi-arrow-up-short"></i>
-          </div>
-        </>
-      )}
-    </>
-  );
-}
+  return <ScrollToTop isVisible={isVisible} scrollToTop={scrollToTop} />;
+};
+
+export default ScrollTopContainer;
