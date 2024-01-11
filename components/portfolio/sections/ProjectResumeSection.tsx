@@ -1,6 +1,5 @@
 import { Item } from "@/data/portfolio";
 import ProjectDetails from "../portfolio-details/ProjectDetails";
-import SocialShare from "../portfolio-details/SocialShare/SocialShare";
 
 const ProjectResumeSection = ({ portfolio }: { portfolio: Item }) => {
   return (
@@ -13,7 +12,6 @@ const ProjectResumeSection = ({ portfolio }: { portfolio: Item }) => {
         <div className="row">
           <ProjectDetails details={portfolio} />
         </div>
-        <SocialShare />
       </div>
     </div>
   );
