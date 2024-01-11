@@ -1,22 +1,12 @@
-const SocialShare = () => {
-  const socialMedia = [
-    {
-      name: "Facebook",
-      icon: "fab fa-facebook-f",
-      url: "#",
-    },
-    {
-      name: "Twitter",
-      icon: "fab fa-twitter",
-      url: "#",
-    },
-    {
-      name: "LinkedIn",
-      icon: "fab fa-linkedin-in",
-      url: "#",
-    },
-  ];
+type Props = {
+  socialMedia: {
+    name: string;
+    icon: string;
+    url: string;
+  }[];
+};
 
+const SocialShare = ({ socialMedia }: Props) => {
   return (
     <ul className="style-none social-icon circle-shape d-flex pt-10">
       {socialMedia.map((platform) => (
