@@ -1,6 +1,10 @@
 import Head from "next/head";
 
-const Seo = ({ pageTitle }: { pageTitle: string }) => (
+type Props = {
+  pageTitle: string;
+};
+
+const Seo = ({ pageTitle }: Props) => (
   <Head>
     <title>
       {pageTitle &&
