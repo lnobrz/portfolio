@@ -1,7 +1,7 @@
 import Seo from "../../components/common/Seo";
 import Header from "@/components/home-page/Header";
 import ExperienceSectionContainer from "@/components/home-page/sections/ExperienceSection/ExperienceSectionContainer";
-import HeroSection from "@/components/home-page/sections/HeroSection";
+import HeroSectionContainer from "@/components/home-page/sections/HeroSection/HeroSectionContainer";
 import PortfolioSection from "@/components/home-page/sections/PortfolioSection";
 import CurriculumSection from "@/components/home-page/sections/CurriculumSection";
 import CounterSection from "@/components/home-page/sections/CounterSection";
@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <Seo pageTitle="Persoanl Portfolio" />
       <Header />
-      <HeroSection />
+      <HeroSectionContainer />
       <ExperienceSectionContainer />
       <PortfolioSection />
       <CurriculumSection />

@@ -1,42 +1,10 @@
 import Image from "next/image";
 
-const HeroSection = () => {
-  const images = [
-    {
-      src: "/images/shape/shape_56.svg",
-      alt: "media",
-      className: "lazy-img shapes shape-one",
-    },
-    {
-      src: "/images/shape/shape_57.svg",
-      alt: "media",
-      className: "lazy-img shapes shape-two",
-    },
-    {
-      src: "/images/shape/shape_58.svg",
-      alt: "media",
-      className: "lazy-img shapes shape-three",
-    },
-    {
-      src: "/images/shape/shape_59.svg",
-      alt: "media",
-      className: "lazy-img shapes shape-four",
-    },
-  ];
+type Props = {
+  images: { src: string; alt: string; className: string }[];
+};
 
-  const renderImages = () => {
-    return images.map((image, index) => (
-      <Image
-        key={index}
-        src={image.src}
-        alt={image.alt}
-        width={20}
-        height={20}
-        className={image.className}
-      />
-    ));
-  };
-
+const HeroSection = ({ images }: Props) => {
   return (
     <div className="hero-banner-four text-center position-relative" id="s1">
       <div className="container">
@@ -106,7 +74,16 @@ const HeroSection = () => {
           height={671}
         />
       </div>
-      {renderImages()}
+      {images.map((image, index) => (
+        <Image
+          key={index}
+          src={image.src}
+          alt={image.alt}
+          width={20}
+          height={20}
+          className={image.className}
+        />
+      ))}
     </div>
   );
 };
