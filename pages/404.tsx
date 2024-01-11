@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Seo from "../components/common/Seo";
 import Image from "next/image";
-import Header from "@/components/home-page/Header/Header";
+import HeaderContainer from "@/components/home-page/Header/HeaderContainer";
 
 const Pricing = () => {
   return (
     <>
       <Seo pageTitle="404" />
-      <Header />
+      <HeaderContainer />
       <div className="error-page-content d-flex align-items-center justify-content-center">
         <div className="container">
           <div className="row">

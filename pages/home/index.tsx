@@ -1,5 +1,4 @@
 import Seo from "../../components/common/Seo";
-import Header from "@/components/home-page/Header/Header";
 import ExperienceSectionContainer from "@/components/home-page/sections/ExperienceSection/ExperienceSectionContainer";
 import HeroSectionContainer from "@/components/home-page/sections/HeroSection/HeroSectionContainer";
 import PortfolioSection from "@/components/home-page/sections/PortfolioSection";
