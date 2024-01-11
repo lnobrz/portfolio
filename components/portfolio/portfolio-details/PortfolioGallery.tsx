@@ -25,7 +25,7 @@ const images = [
 
 const PortfolioGallery = () => {
   return (
-    <>
+    <div className="row">
       <Gallery>
         {images.map((image, index) => (
           <div
@@ -62,7 +62,7 @@ const PortfolioGallery = () => {
           </div>
         ))}
       </Gallery>
-    </>
+    </div>
   );
 };
 

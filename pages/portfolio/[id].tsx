@@ -48,22 +48,16 @@ const DynamicPortfolioDetails = () => {
         <div className="project-desctiption">
           <div className="container">
             <div className="row">
-              <div className="col-lg-8" data-aos="fade-right">
-                {portfolio && <ProjectSlide slide={portfolio} />}
-              </div>
+              {portfolio && <ProjectSlide slide={portfolio} />}
               {portfolio && <ProjectResumeSection portfolio={portfolio} />}
             </div>
             <div className="col-xl-9  mt-120 lg-mt-80">
               <ProjectAboutSection />
               <ProjectDetailsSection />
-              <div className="row">
-                <PortfolioGallery />
-              </div>
+              <PortfolioGallery />
               <ProjectResultSection />
             </div>
-            <div className="project-pagination m-auto pt-100 lg-pt-50 sm-pt-10">
-              <ProjectsSliderSection />
-            </div>
+            <ProjectsSliderSection />
           </div>
         </div>
       </div>

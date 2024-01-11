@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ProjectsSliderSection = () => {
   return (
-    <>
+    <div className="project-pagination m-auto pt-100 lg-pt-50 sm-pt-10">
       <div className="row gx-xxl-5">
         <div className="col-sm-6">
           <div
@@ -45,7 +45,7 @@ const ProjectsSliderSection = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
