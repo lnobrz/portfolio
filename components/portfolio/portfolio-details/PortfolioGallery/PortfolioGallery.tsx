@@ -2,28 +2,16 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import Image from "next/image";
 
-const images = [
-  {
-    src: "/images/media/img_89.jpg",
-    width: "460",
-    height: "400",
-    alt: "media",
-  },
-  {
-    src: "/images/media/img_90.jpg",
-    width: "460",
-    height: "400",
-    alt: "media",
-  },
-  {
-    src: "/images/media/img_91.jpg",
-    width: "960",
-    height: "510",
-    alt: "media",
-  },
-];
+type Props = {
+  images: {
+    src: string;
+    width: number;
+    height: number;
+    alt: string;
+  }[];
+};
 
-const PortfolioGallery = () => {
+const PortfolioGallery = ({ images }: Props) => {
   return (
     <div className="row">
       <Gallery>
