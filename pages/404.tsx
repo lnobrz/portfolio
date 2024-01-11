@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Seo from "../components/common/Seo";
 import Image from "next/image";
-import Header from "@/components/home-page/Header";
+import Header from "@/components/home-page/Header/Header";
 
 const Pricing = () => {
   return (

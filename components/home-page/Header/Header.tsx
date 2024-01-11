@@ -1,30 +1,16 @@
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import MenuContainer from "../Menu/MenuContainer";
+import MenuContainer from "../../Menu/MenuContainer";
 
-const Header = () => {
-  const [navbar, setNavbar] = useState(false);
+type Props = {
+  navBar: boolean;
+};
 
-  const changeBackground = () => {
-    if (window.scrollY <= 10) {
-      setNavbar(false);
-      return;
-    }
-    setNavbar(true);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
-    return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
-  }, []);
-
+const Header = ({ navBar }: Props) => {
   return (
     <header
       className={`theme-main-menu sticky-menu theme-menu-four ${
-        navbar ? "fixed" : ""
+        navBar ? "fixed" : ""
       }`}
     >
       <div className="inner-content position-relative">

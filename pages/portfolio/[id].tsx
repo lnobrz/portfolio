@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { Item, items } from "@/data/portfolio";
 import PortfolioDetailsTitle from "../../components/portfolio/portfolio-details/PortfolioDetailsTitle";
 import Image from "next/image";
-import Header from "@/components/home-page/Header";
+import Header from "@/components/home-page/Header/Header";
 import Footer from "@/components/home-page/Footer";
 import ProjectAboutSection from "@/components/portfolio/sections/ProjectAboutSection";
 import ProjectResumeSection from "@/components/portfolio/sections/ProjectResumeSection";
