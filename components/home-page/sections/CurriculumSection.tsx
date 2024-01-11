@@ -2,7 +2,7 @@ import Awards from "../Awards";
 import EducationContainer from "../Education/EducationContainer";
 import ProjectBanner from "../ProjectBanner";
 import SkillsContainer from "../Skills/SkillsContainer";
-import Tools from "../Tools";
+import ToolsContainer from "../Tools/ToolsContainer";
 
 const CurriculumSection = () => {
   return (
@@ -69,7 +69,7 @@ const CurriculumSection = () => {
             <h3 className="block-title fw-500 tx-dark pb-30 mt-150 md-pb-20 md-mt-60">
               Tools
             </h3>
-            <Tools />
+            <ToolsContainer />
           </div>
           <div
             className="col-lg-6 col-md-7 col-sm-10 m-auto"
