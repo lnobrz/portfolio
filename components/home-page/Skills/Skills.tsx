@@ -1,3 +1,5 @@
+import strings from "@/data/strings";
+
 type Props = {
   skills: {
     name: string;
@@ -13,7 +15,7 @@ const Skills = ({ skills }: Props) => {
           <span style={{ backgroundColor: skill.bgColor }}>{skill.name}</span>
         </li>
       ))}
-      <li>&amp; more…</li>
+      <li>{strings.skillsSection.postSkillsText}</li>
     </ul>
   );
 };

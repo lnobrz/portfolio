@@ -1,4 +1,6 @@
 import Image from "next/image";
+import HeroSubtitleContainer from "./Subtitle/HeroSubtitleContainer";
+import strings from "@/data/strings";
 
 type Props = {
   images: { src: string; alt: string; className: string }[];
@@ -16,13 +18,7 @@ const HeroSection = ({ images }: Props) => {
           width={90}
           height={90}
         />
-        <div
-          className="profile-name tx-dark text-lg mt-35 mb-20"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          Hi, I’m <span className="fw-500">Rashed</span>
-        </div>
+        <HeroSubtitleContainer />
         <div className="row">
           <div
             className="col-xxl-11 col-lg-10 col-md-8 m-auto "
@@ -30,7 +26,7 @@ const HeroSection = ({ images }: Props) => {
             data-aos-delay="300"
           >
             <h1 className="hero-heading fw-500 font-recoleta tx-dark mb-65 lg-mb-40">
-              Building digital products, brands &amp; expereince
+              {strings.heroSection.title}
             </h1>
           </div>
           <div
@@ -39,7 +35,7 @@ const HeroSection = ({ images }: Props) => {
             data-aos-delay="400"
           >
             <p className="text-lg pe-xxl-4 ps-xxl-4 mb-75 lg-mb-50">
-              Janu is your online team mangement tool that easy and prompt
+              {strings.heroSection.paragraph}
             </p>
           </div>
         </div>
@@ -49,7 +45,7 @@ const HeroSection = ({ images }: Props) => {
           data-aos="fade-up"
           data-aos-delay="500"
         >
-          Contact Me
+          {strings.heroSection.ctaButton}
         </a>
       </div>
       <div className="fancy-img-block fancy-block-one">

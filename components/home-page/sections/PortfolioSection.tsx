@@ -5,6 +5,7 @@ import "photoswipe/dist/photoswipe.css";
 import Image from "next/image";
 import Link from "next/link";
 import { items } from "@/data/portfolio";
+import strings from "@/data/strings";
 
 const PortfolioSection = () => {
   return (
@@ -13,15 +14,15 @@ const PortfolioSection = () => {
         <div className="col-lg-4">
           <div className="title-style-five text-center text-lg-start md-mb-20">
             <h2 className="main-title font-recoleta fw-500 tx-dark">
-              My
+              {strings.portfolioSection.title[0]}
               <span className="d-inline-block position-relative">
-                Recent
+                {strings.portfolioSection.title[1]}
                 <span
                   className="mark-bg"
                   style={{ backgroundColor: "#D9F5F8" }}
                 />
               </span>
-              Work.
+              .
             </h2>
           </div>
         </div>

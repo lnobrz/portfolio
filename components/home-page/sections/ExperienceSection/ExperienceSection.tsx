@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BlockContainer from "../../Block/BlockContainer";
+import strings from "@/data/strings";
 
 type Props = {
   decorations: {
@@ -23,10 +24,12 @@ const ExperienceSection = ({ decorations }: Props) => {
               data-aos="fade-right"
             >
               <div className="main-count">
-                0<span className="counter">7</span>+
+                <span className="counter">
+                  {strings.experienceSection.yearsAmount}
+                </span>
               </div>
               <h2 className="title fw-500 tx-dark">
-                Years Experience in field
+                {strings.experienceSection.yearsPresentation}
               </h2>
             </div>
           </div>

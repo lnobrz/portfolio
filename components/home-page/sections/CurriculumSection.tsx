@@ -3,6 +3,7 @@ import EducationContainer from "../Education/EducationContainer";
 import ProjectBanner from "../ProjectBanner";
 import SkillsContainer from "../Skills/SkillsContainer";
 import ToolsContainer from "../Tools/ToolsContainer";
+import strings from "@/data/strings";
 
 const CurriculumSection = () => {
   return (
@@ -10,7 +11,7 @@ const CurriculumSection = () => {
       className="fancy-feature-thirteen position-relative mt-250 mb-150 lg-mt-120 lg-mb-100"
       id="s4"
     >
-      <div className="fancy-text">Development</div>
+      <div className="fancy-text">{strings.curriculumSection.decoration}</div>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-5">
@@ -19,15 +20,15 @@ const CurriculumSection = () => {
               data-aos="fade-right"
             >
               <h2 className="main-title font-recoleta fw-500 tx-dark">
-                My
+                {strings.curriculumSection.title[0]}{" "}
                 <span className="d-inline-block position-relative">
-                  Expereince
+                  {strings.curriculumSection.title[1]}
                   <span
                     className="mark-bg"
                     style={{ backgroundColor: "#FFDBDB" }}
                   />
                 </span>
-                &amp; skills.
+                {strings.curriculumSection.title[2]}
               </h2>
             </div>
           </div>
@@ -39,7 +40,7 @@ const CurriculumSection = () => {
             data-aos-delay="200"
           >
             <h3 className="block-title fw-500 tx-dark pb-30 lg-pb-10">
-              Skills
+              {strings.curriculumSection.skillsSectionTitle}
             </h3>
             <SkillsContainer />
           </div>
@@ -49,7 +50,7 @@ const CurriculumSection = () => {
             data-aos-delay="200"
           >
             <h3 className="block-title fw-500 tx-dark pb-20 md-mt-50 md-pb-10">
-              Award
+              {strings.curriculumSection.experienceSectionTitle}
             </h3>
             <Awards />
           </div>
@@ -57,7 +58,7 @@ const CurriculumSection = () => {
         <div className="row">
           <div className="col-lg-3 col-sm-6 " data-aos="fade-up">
             <h3 className="block-title fw-500 tx-dark pb-30 mt-150 md-pb-20 md-mt-60">
-              Education
+              {strings.curriculumSection.educationSectionTitle}
             </h3>
             <EducationContainer />
           </div>
@@ -67,7 +68,7 @@ const CurriculumSection = () => {
             data-aos-delay="200"
           >
             <h3 className="block-title fw-500 tx-dark pb-30 mt-150 md-pb-20 md-mt-60">
-              Tools
+              {strings.curriculumSection.toolsSectionTitle}
             </h3>
             <ToolsContainer />
           </div>
