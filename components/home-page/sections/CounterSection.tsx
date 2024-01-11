@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Counter from "../Counter";
+import CounterContainer from "../Counter/CounterContainer";
 
 const CounterSection = () => {
   return (
@@ -35,7 +35,7 @@ const CounterSection = () => {
         />
         <div className="container">
           <div className="row">
-            <Counter />
+            <CounterContainer />
           </div>
         </div>
       </div>

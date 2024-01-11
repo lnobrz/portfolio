@@ -3,30 +3,15 @@ import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import Image from "next/image";
 
-const counters = [
-  {
-    logo: "/images/logo/Plogo-14.png",
-    title: "Figma",
-    percentage: 93,
-  },
-  {
-    logo: "/images/logo/Plogo-15.png",
-    title: "Photoshop",
-    percentage: 92,
-  },
-  {
-    logo: "/images/logo/Plogo-16.png",
-    title: "Sketch",
-    percentage: 85,
-  },
-  {
-    logo: "/images/logo/Plogo-17.png",
-    title: "XD",
-    percentage: 82,
-  },
-];
+type Props = {
+  counters: {
+    logo: string;
+    title: string;
+    percentage: number;
+  }[];
+};
 
-const Counter = () => {
+const Counter = ({ counters }: Props) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
