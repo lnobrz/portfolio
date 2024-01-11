@@ -47,7 +47,6 @@ const CallToAction = () => {
           </div>
         </div>
       </div>
-      <div className="shapes shape-one" />
     </div>
   );
 };
