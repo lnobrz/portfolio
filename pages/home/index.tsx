@@ -7,6 +7,8 @@ import CounterSection from "@/components/home-page/sections/CounterSection";
 import TestimonialsSection from "@/components/home-page/sections/TestimonialsSection";
 import Footer from "@/components/home-page/Footer";
 import HeaderContainer from "@/components/home-page/Header/HeaderContainer";
+import ContactFormContainer from "@/components/home-page/ContactForm/ContactFormContainer";
+import ContactSection from "@/components/home-page/sections/ContactSection";
 
 const Home = () => {
   return (
@@ -19,6 +21,7 @@ const Home = () => {
       <CurriculumSection />
       <CounterSection />
       <TestimonialsSection />
+      <ContactSection />
       <Footer />
     </>
   );
