@@ -1,11 +1,11 @@
 import { FormEvent } from "react";
 
-const ContactForm = () => {
-  const handleSubmit = (event: FormEvent) => {
-    event.preventDefault();
-  };
+type Props = {
+  submitHandler: (event: FormEvent) => void;
+};
+const ContactForm = ({ submitHandler }: Props) => {
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={submitHandler}>
       <div className="row controls">
         <div className="col-12">
           <div className="input-group-meta form-group mb-25">

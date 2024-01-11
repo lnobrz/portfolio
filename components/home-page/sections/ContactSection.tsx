@@ -1,5 +1,5 @@
-import ContactForm from "../ContactForm";
 import Image from "next/image";
+import ContactFormContainer from "../ContactForm/ContactFormContainer";
 
 const ContactSection = () => {
   return (
@@ -47,7 +47,7 @@ const ContactSection = () => {
               </div>
               <div className="col-lg-6 ms-auto">
                 <div className="form-style-one md-mt-40">
-                  <ContactForm />
+                  <ContactFormContainer />
                 </div>
               </div>
             </div>
