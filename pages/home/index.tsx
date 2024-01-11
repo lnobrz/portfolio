@@ -1,6 +1,6 @@
 import Seo from "../../components/common/Seo";
 import Header from "@/components/home-page/Header";
-import ExperienceSection from "@/components/home-page/sections/ExperienceSection";
+import ExperienceSectionContainer from "@/components/home-page/sections/ExperienceSection/ExperienceSectionContainer";
 import HeroSection from "@/components/home-page/sections/HeroSection";
 import PortfolioSection from "@/components/home-page/sections/PortfolioSection";
 import CurriculumSection from "@/components/home-page/sections/CurriculumSection";
@@ -14,7 +14,7 @@ const Home = () => {
       <Seo pageTitle="Persoanl Portfolio" />
       <Header />
       <HeroSection />
-      <ExperienceSection />
+      <ExperienceSectionContainer />
       <PortfolioSection />
       <CurriculumSection />
       <CounterSection />
