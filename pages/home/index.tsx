@@ -19,7 +19,6 @@ const Home = () => {
       <CurriculumSection />
       <CounterSection />
       <TestimonialsSection />
-      <TestimonialsSection />
       <Footer />
     </>
   );
