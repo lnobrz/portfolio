@@ -1,4 +1,4 @@
-import Testimonial from "../Testimonial";
+import TestimonialContainer from "../Testimonial/TestimonialContainer";
 
 const TestimonialsSection = () => {
   return (
@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
       </div>
       <div className="slider-wrapper p-30">
         <div className="feedback_slider_four">
-          <Testimonial />
+          <TestimonialContainer />
         </div>
       </div>
     </div>

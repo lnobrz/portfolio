@@ -1,8 +1,6 @@
-import React from "react";
-import Slider from "react-slick";
-import Image from "next/image";
+import Testimonial from "./Testimonial";
 
-const Testimonial = () => {
+const TestimonialContainer = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -69,40 +67,7 @@ const Testimonial = () => {
     },
   ];
 
-  return (
-    <Slider {...settings} arrows={false}>
-      {testimonialData.map((testimonial) => (
-        <div className="item" key={testimonial.id}>
-          <div className="feedback-block-four position-relative">
-            <div className="icon rounded-circle d-flex align-items-center justify-content-center">
-              <Image src={testimonial.icon} alt="icon" width={24} height={22} />
-            </div>
-            <p className="tx-dark">{testimonial.content}</p>
-            <div className="d-flex align-items-center justify-content-between">
-              <h6 className="name fs-20 fw-500 m0 tx-dark">
-                {testimonial.name}
-                <span className="fw-normal opacity-50 fs-16">
-                  {" "}
-                  {testimonial.location}
-                </span>
-              </h6>
-              <ul className="style-none d-flex rating">
-                {[...Array(testimonial.rating)].map((star, index) => (
-                  <li key={index}>
-                    <i className="bi bi-star-fill" />
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <span
-              className="ribbon position-absolute"
-              style={{ background: testimonial.color }}
-            />
-          </div>
-        </div>
-      ))}
-    </Slider>
-  );
+  return <Testimonial settings={settings} testimonialData={testimonialData} />;
 };
 
-export default Testimonial;
+export default TestimonialContainer;

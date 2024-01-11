@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Social from "./Social";
+import SocialContainer from "./Social/SocialContainer";
 
 const Footer = () => {
   return (
@@ -31,7 +31,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="col-lg-4 mb-30 order-lg-2">
-            <Social />
+            <SocialContainer />
           </div>
         </div>
       </div>
