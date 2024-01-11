@@ -1,24 +1,14 @@
 import Image from "next/image";
 
-const Block = () => {
-  const blocks = [
-    {
-      iconSrc: "/images/icon/icon_39.svg",
-      bgColor: "#EBF8F8",
-      title: "Product & Brand Designer",
-    },
-    {
-      iconSrc: "/images/icon/icon_40.svg",
-      bgColor: "#FFF8F8",
-      title: "Coding & Programming",
-    },
-    {
-      iconSrc: "/images/icon/icon_41.svg",
-      bgColor: "#F3F5FF",
-      title: "Online Marketing",
-    },
-  ];
+type Props = {
+  blocks: {
+    iconSrc: string;
+    bgColor: string;
+    title: string;
+  }[];
+};
 
+const Block = ({ blocks }: Props) => {
   return (
     <>
       {blocks.map((block, index) => (

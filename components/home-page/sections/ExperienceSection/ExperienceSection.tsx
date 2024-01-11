@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Block from "../../Block";
+import BlockContainer from "../../Block/BlockContainer";
 
 type Props = {
   decorations: {
@@ -32,7 +32,7 @@ const ExperienceSection = ({ decorations }: Props) => {
           </div>
           <div className="block-wrapper md-mt-10">
             <div className="row gx-xxl-5">
-              <Block />
+              <BlockContainer />
             </div>
           </div>
         </div>
