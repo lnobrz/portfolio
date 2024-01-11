@@ -1,4 +1,5 @@
-import { useState } from "react";
+"use client";
+
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import Image from "next/image";
