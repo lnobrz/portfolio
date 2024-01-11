@@ -1,4 +1,6 @@
-const Skills = () => {
+import Skills from "./Skills";
+
+const SkillsContainer = () => {
   const skills = [
     { name: "Great Interface", bgColor: "#FFF8F8" },
     { name: "Experienced", bgColor: "#E4FCF9" },
@@ -9,16 +11,7 @@ const Skills = () => {
     { name: "Safe", bgColor: "#FFF0F0" },
   ];
 
-  return (
-    <ul className="d-flex flex-wrap align-items-center style-none skils-list">
-      {skills.map((skill, index) => (
-        <li key={index}>
-          <span style={{ backgroundColor: skill.bgColor }}>{skill.name}</span>
-        </li>
-      ))}
-      <li>&amp; more…</li>
-    </ul>
-  );
+  return <Skills skills={skills} />;
 };
 
-export default Skills;
+export default SkillsContainer;

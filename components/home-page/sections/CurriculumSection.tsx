@@ -1,7 +1,7 @@
 import Awards from "../Awards";
-import Education from "../Education";
+import EducationContainer from "../Education/EducationContainer";
 import ProjectBanner from "../ProjectBanner";
-import Skills from "../Skills";
+import SkillsContainer from "../Skills/SkillsContainer";
 import Tools from "../Tools";
 
 const CurriculumSection = () => {
@@ -41,7 +41,7 @@ const CurriculumSection = () => {
             <h3 className="block-title fw-500 tx-dark pb-30 lg-pb-10">
               Skills
             </h3>
-            <Skills />
+            <SkillsContainer />
           </div>
           <div
             className="col-xl-5 col-lg-6 ms-auto "
@@ -59,7 +59,7 @@ const CurriculumSection = () => {
             <h3 className="block-title fw-500 tx-dark pb-30 mt-150 md-pb-20 md-mt-60">
               Education
             </h3>
-            <Education />
+            <EducationContainer />
           </div>
           <div
             className="col-lg-3 col-sm-6 ps-xl-5"
