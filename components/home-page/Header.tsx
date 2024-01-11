@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import PortfolioMenu from "../header/PortfolioMenu";
+import MenuContainer from "../Menu/MenuContainer";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -39,7 +39,7 @@ const Header = () => {
               />
             </Link>
           </div>
-          <PortfolioMenu />
+          <MenuContainer />
         </div>
       </div>
     </header>

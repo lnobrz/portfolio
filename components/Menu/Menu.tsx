@@ -1,22 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
-const navItems = [
-  { title: "About me", href: "#s1" },
-  { title: "Services", href: "#s2" },
-  { title: "Portfolio", href: "#s3" },
-  { title: "Skill", href: "#s4" },
-  { title: "Contact", href: "#s5" },
-];
+type Props = {
+  navItems: { title: string; href: string }[];
+  clickHandler: (index: number) => void;
+  activeLink: number;
+};
 
-const PortfolioMenu = () => {
-  const [activeLink, setActiveLink] = useState(0);
-
-  const handleLinkClick = (index: number) => {
-    setActiveLink(index);
-  };
-
+const Menu = ({ navItems, clickHandler, activeLink }: Props) => {
   return (
     <nav className="navbar navbar-expand-lg order-lg-2">
       <button
@@ -49,7 +40,7 @@ const PortfolioMenu = () => {
               <a
                 className={`nav-link ${activeLink === i ? "active" : ""}`}
                 href={navItem.href}
-                onClick={() => handleLinkClick(i)}
+                onClick={() => clickHandler(i)}
               >
                 {navItem.title}
               </a>
@@ -61,4 +52,4 @@ const PortfolioMenu = () => {
   );
 };
 
-export default PortfolioMenu;
+export default Menu;
