@@ -1,9 +1,8 @@
-import Awards from "../Awards";
-import EducationContainer from "../Education/EducationContainer";
+import Education from "../Education";
 import ProjectBanner from "../ProjectBanner";
 import SkillsContainer from "../Skills/SkillsContainer";
-import ToolsContainer from "../Tools/ToolsContainer";
 import strings from "@/data/strings";
+import Experiences from "../Experiences";
 
 const CurriculumSection = () => {
   return (
@@ -52,28 +51,18 @@ const CurriculumSection = () => {
             <h3 className="block-title fw-500 tx-dark pb-20 md-mt-50 md-pb-10">
               {strings.curriculumSection.experienceSectionTitle}
             </h3>
-            <Awards />
+            <Experiences />
           </div>
         </div>
-        <div className="row">
-          <div className="col-lg-3 col-sm-6 " data-aos="fade-up">
+        <div className="row d-flex justify-content-between">
+          <div className="col-lg-6 col-sm-6 " data-aos="fade-up">
             <h3 className="block-title fw-500 tx-dark pb-30 mt-150 md-pb-20 md-mt-60">
               {strings.curriculumSection.educationSectionTitle}
             </h3>
-            <EducationContainer />
+            <Education />
           </div>
           <div
-            className="col-lg-3 col-sm-6 ps-xl-5"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <h3 className="block-title fw-500 tx-dark pb-30 mt-150 md-pb-20 md-mt-60">
-              {strings.curriculumSection.toolsSectionTitle}
-            </h3>
-            <ToolsContainer />
-          </div>
-          <div
-            className="col-lg-6 col-md-7 col-sm-10 m-auto"
+            className="col-lg-6 col-md-7 col-sm-10"
             data-aos="fade-up"
             data-aos-delay="400"
           >
