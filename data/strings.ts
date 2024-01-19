@@ -92,6 +92,25 @@ const strings = {
     "REST APIs",
     "Figma",
   ],
+  projectBanner: {
+    subtitle: "Me Contrate",
+    title: "Algum Projeto?",
+    cta: "Fale Comigo",
+  },
+  testimonialsSection: {
+    subtitle: "Depoimentos",
+    title: ["Feedback", "de", "Clientes"],
+  },
+  contactSection: {
+    title: ["Vamos", "Conversar"],
+    subtitle:
+      "Nossa paixão é desenvolver software que não apenas atende, mas supera suas expectativas.",
+    form: {
+      nameLabel: "Seu Nome *",
+      emailLabel: "Seu Email *",
+      messageLabel: "Sua Mensagem *",
+    },
+  },
 };
 
 export default strings;
