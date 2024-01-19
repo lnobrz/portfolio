@@ -1,3 +1,4 @@
+import strings from "@/data/strings";
 import { FormEvent } from "react";
 
 type Props = {
@@ -11,7 +12,7 @@ const ContactForm = ({ submitHandler }: Props) => {
           <div className="input-group-meta form-group mb-25">
             <input
               type="text"
-              placeholder="Rashed Kabir"
+              placeholder={strings.contactSection.form.nameLabel}
               name="name"
               required
               data-error="Name is required."
@@ -23,7 +24,7 @@ const ContactForm = ({ submitHandler }: Props) => {
           <div className="input-group-meta form-group mb-50">
             <input
               type="email"
-              placeholder="rshdkabir@gmail.com"
+              placeholder={strings.contactSection.form.emailLabel}
               name="email"
               required
               data-error="Valid email is required."
@@ -34,7 +35,7 @@ const ContactForm = ({ submitHandler }: Props) => {
         <div className="col-12">
           <div className="input-group-meta form-group mb-30">
             <textarea
-              placeholder="Your message*"
+              placeholder={strings.contactSection.form.messageLabel}
               name="message"
               required
               data-error="Please,leave us a message."

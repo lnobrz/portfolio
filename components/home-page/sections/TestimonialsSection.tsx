@@ -1,3 +1,4 @@
+import strings from "@/data/strings";
 import TestimonialContainer from "../Testimonial/TestimonialContainer";
 
 const TestimonialsSection = () => {
@@ -8,11 +9,13 @@ const TestimonialsSection = () => {
           className="title-style-five text-center mb-75 lg-mb-40"
           data-aos="fade-up"
         >
-          <div className="sc-title text-uppercase">TESTIMONIALS</div>
+          <div className="sc-title text-uppercase">
+            {strings.testimonialsSection.subtitle}
+          </div>
           <h2 className="main-title font-recoleta fw-500 tx-dark">
-            Client
+            {`${strings.testimonialsSection.title[0]} ${strings.testimonialsSection.title[1]} `}
             <span className="d-inline-block position-relative">
-              Feedback
+              {`${strings.testimonialsSection.title[2]}`}
               <span
                 className="mark-bg"
                 style={{ backgroundColor: "#FFE9B0" }}

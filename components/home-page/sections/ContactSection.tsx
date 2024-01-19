@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactFormContainer from "../ContactForm/ContactFormContainer";
+import strings from "@/data/strings";
 
 const ContactSection = () => {
   return (
@@ -36,13 +37,13 @@ const ContactSection = () => {
             <div className="row align-items-center">
               <div className="col-lg-5">
                 <h2 className="title-xl font-recoleta fw-500 tx-dark">
-                  Let’s
+                  {strings.contactSection.title[0]}
                   <span className="d-inline-block position-relative">
-                    Connect
+                    {strings.contactSection.title[1]}
                   </span>
                 </h2>
                 <p className="text-lg mt-35 md-mt-20">
-                  Growing up in poverty, children face tough challenges.
+                  {strings.contactSection.subtitle}
                 </p>
               </div>
               <div className="col-lg-6 ms-auto">

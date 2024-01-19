@@ -1,3 +1,4 @@
+import strings from "@/data/strings";
 import Image from "next/image";
 
 const ProjectBanner = () => {
@@ -11,11 +12,11 @@ const ProjectBanner = () => {
         height={596}
       />
       <div className="text-meta w-100">
-        <div className="tm-heading">Catch me</div>
+        <div className="tm-heading">{strings.projectBanner.subtitle}</div>
         <h3 className="text-white font-recoleta fw-500">
-          <span className="d-block">Any Project? </span>
+          <span className="d-block">{strings.projectBanner.title}</span>
           <a href="#s5" className="tran3s text-decoration-underline">
-            Let’s Talk
+            {strings.projectBanner.cta}
           </a>
         </h3>
       </div>
