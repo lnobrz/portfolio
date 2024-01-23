@@ -26,8 +26,6 @@ const ProjectsSliderSection = ({ currentId, itemsLength }: Props) => {
     }
   }, [currentId, itemsLength]);
 
-  console.log(currentId, itemsLength, nextItem, previousItem);
-
   return (
     <div className="project-pagination m-auto pt-100 lg-pt-50 sm-pt-10">
       <div className="row gx-xxl-5">
