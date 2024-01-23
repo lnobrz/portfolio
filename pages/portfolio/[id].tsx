@@ -24,7 +24,11 @@ const PortfolioDetailsContainer = () => {
   return (
     <>
       {portfolio && (
-        <PortfolioDetails portfolio={portfolio} isLoading={isLoading} />
+        <PortfolioDetails
+          portfolio={portfolio}
+          length={items.length}
+          isLoading={isLoading}
+        />
       )}
     </>
   );

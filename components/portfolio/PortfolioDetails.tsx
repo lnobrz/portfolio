@@ -8,16 +8,18 @@ import ProjectResumeSection from "@/components/portfolio/sections/ProjectResumeS
 import ProjectDetailsSection from "@/components/portfolio/sections/ProjectDetailsSection";
 import ProjectResultSection from "@/components/portfolio/sections/ProjectResultSection";
 import ProjectsSliderSection from "@/components/portfolio/sections/ProjectsSliderSection";
-import PortfolioGalleryContainer from "@/components/portfolio/portfolio-details/PortfolioGallery/PortfolioGalleryContainer";
 import HeaderContainer from "@/components/home-page/Header/HeaderContainer";
 import { Item } from "@/data/portfolio";
+import PortfolioGallery from "./portfolio-details/PortfolioGallery/PortfolioGallery";
+import strings from "@/data/strings";
 
 type Props = {
   portfolio: Item;
   isLoading: boolean;
+  length: number;
 };
 
-const PortfolioDetails = ({ portfolio, isLoading }: Props) => {
+const PortfolioDetails = ({ portfolio, isLoading, length }: Props) => {
   return (
     <>
       {isLoading && <h1>Loading...</h1>}
@@ -25,21 +27,37 @@ const PortfolioDetails = ({ portfolio, isLoading }: Props) => {
         <>
           <Seo pageTitle="Portfolio Details" />
           <HeaderContainer />
-          {portfolio && <PortfolioDetailsTitle portfolio={portfolio} />}
+          <PortfolioDetailsTitle
+            projectTag={portfolio.tag}
+            projectName={portfolio.name}
+          />
           <div className="portfolio-details-two pt-70 pb-50 lg-pb-10 md-pt-10">
             <div className="project-desctiption">
               <div className="container">
                 <div className="row">
-                  {portfolio && <ProjectSlide slide={portfolio} />}
-                  {portfolio && <ProjectResumeSection portfolio={portfolio} />}
+                  <ProjectSlide slide={portfolio.slide} />
+                  <ProjectResumeSection details={portfolio.projectInfo} />
                 </div>
                 <div className="col-xl-9  mt-120 lg-mt-80">
-                  <ProjectAboutSection />
-                  <ProjectDetailsSection />
-                  <PortfolioGalleryContainer />
-                  <ProjectResultSection />
+                  <ProjectAboutSection
+                    projectName={portfolio.name}
+                    content={portfolio.projectInfo.about}
+                  />
+                  <ProjectDetailsSection
+                    title={portfolio.projectInfo.detailsTitle}
+                    content={portfolio.projectInfo.details}
+                  />
+                  <PortfolioGallery images={portfolio.imageGallery} />
+                  <ProjectResultSection
+                    subtitle={strings.portfolio.detailsSection.subtitle}
+                    title={strings.portfolio.resultSection.title}
+                    content={portfolio.projectInfo.finalResult}
+                  />
                 </div>
-                <ProjectsSliderSection />
+                <ProjectsSliderSection
+                  currentId={portfolio.id}
+                  itemsLength={length}
+                />
               </div>
             </div>
           </div>

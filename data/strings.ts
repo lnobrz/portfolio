@@ -111,6 +111,22 @@ const strings = {
       messageLabel: "Sua Mensagem *",
     },
   },
+  portfolio: {
+    aboutSection: {
+      title: "Sobre",
+      subtitle: "Visão Geral",
+    },
+    detailsSection: {
+      subtitle: "Processo de Desenvolvimento",
+    },
+    resultSection: {
+      title: "Resultado Final",
+    },
+    projectSliderSection: {
+      previous: "Projeto Anterior",
+      next: "Próximo Projeto",
+    },
+  },
 };
 
 export default strings;

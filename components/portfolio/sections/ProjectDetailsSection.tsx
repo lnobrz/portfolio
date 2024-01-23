@@ -1,4 +1,11 @@
-const ProjectDetailsSection = () => {
+import strings from "@/data/strings";
+
+type Props = {
+  title: string;
+  content: string[];
+};
+
+const ProjectDetailsSection = ({ title, content }: Props) => {
   return (
     <>
       <div className="row">
@@ -8,25 +15,19 @@ const ProjectDetailsSection = () => {
             data-aos="fade-up"
           >
             <div className="sc-title fst-italic position-relative">
-              Work Proccess
+              {strings.portfolio.detailsSection.subtitle}
             </div>
-            <h2 className="main-title fw-500 tx-dark">
-              Find out the design solution.
-            </h2>
+            <h2 className="main-title fw-500 tx-dark">{title}</h2>
           </div>
         </div>
       </div>
-      <p data-aos="fade-up">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p data-aos="fade-up">
-        Enim eu turpis egestas pretium aenean pharetra. Dui accumsan sit amet
-        nulla facilisi morbi tempus iaculis. Eu ultrices vitae auctor eu augue.
-        Sed turpis tincidunt id aliquet risus Purus in massa tempor nec feugiat
-        nisl pretium fusce. Feugiat vivamus at augue eget arcu dictum. Gravida
-        quis blandit turpis cursus in hac habitasse platea dictumst.
-      </p>
+      {content.map((paragraph, index) => {
+        return (
+          <p data-aos="fade-up" key={`detail-${index}`}>
+            {paragraph}
+          </p>
+        );
+      })}
     </>
   );
 };

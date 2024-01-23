@@ -1,9 +1,6 @@
 import Image from "next/image";
-import { Item } from "@/data/portfolio";
 
-const ProjectSlide = ({ slide }: { slide: Item }) => {
-  const images = [slide?.image ?? "", slide?.image ?? "", slide?.image ?? ""];
-
+const ProjectSlide = ({ slide }: { slide: string[] }) => {
   return (
     <div className="col-lg-8" data-aos="fade-right">
       <div
@@ -12,7 +9,7 @@ const ProjectSlide = ({ slide }: { slide: Item }) => {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          {images.map((image, index) => (
+          {slide.map((image, index) => (
             <div
               className={`carousel-item ${index === 0 ? "active" : ""}`}
               key={index}
