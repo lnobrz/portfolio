@@ -6,6 +6,7 @@ type Props = {
 };
 
 const ProjectAboutSection = ({ projectName, content }: Props) => {
+  console.log(content);
   return (
     <>
       <div className="title-style-twelve mb-45 lg-mb-30" data-aos="fade-up">
@@ -16,10 +17,13 @@ const ProjectAboutSection = ({ projectName, content }: Props) => {
           {strings.portfolio.aboutSection.title} {projectName}
         </h2>
       </div>
+      <div></div>
       {content.map((paragraph, index) => {
-        <p data-aos="fade-up" key={`about-${index}`}>
-          {paragraph}
-        </p>;
+        return (
+          <p data-aos="fade-up" key={`about-${index}`}>
+            {paragraph}
+          </p>
+        );
       })}
     </>
   );
