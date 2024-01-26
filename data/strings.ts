@@ -112,6 +112,12 @@ const strings = {
     },
   },
   portfolio: {
+    resumeSection: {
+      title: "Sobre",
+      date: "Data",
+      clientName: "Nome do Cliente",
+      projectType: "Tipo de Projeto",
+    },
     aboutSection: {
       title: "Sobre",
       subtitle: "Visão Geral",
