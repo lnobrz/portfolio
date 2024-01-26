@@ -60,9 +60,9 @@ const PortfolioDetails = ({ portfolio, isLoading, length }: Props) => {
                 />
               </div>
             </div>
+            <CallToAction />
+            <Footer />
           </div>
-          <CallToAction />
-          <Footer />
         </>
       )}
     </>
