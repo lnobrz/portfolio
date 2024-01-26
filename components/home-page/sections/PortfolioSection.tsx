@@ -39,8 +39,8 @@ const PortfolioSection = () => {
                   <Image
                     width={640}
                     height={666}
-                    src={item.image as string}
-                    alt={item.name as string}
+                    src={item.coverImage}
+                    alt={item.coverImage}
                     className="w-100"
                   />
                 </div>
@@ -54,8 +54,8 @@ const PortfolioSection = () => {
                 </Link>
                 <div className="hover-state tran3s">
                   <Item
-                    original={item.image}
-                    thumbnail={item.image}
+                    original={item.coverImage}
+                    thumbnail={item.coverImage}
                     width={800}
                     height={833}
                   >

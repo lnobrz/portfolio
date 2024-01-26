@@ -16,8 +16,8 @@ const PortfolioGallery = ({ images }: { images: ImageGallery }) => {
               <Item
                 original={image.src}
                 thumbnail={image.src}
-                width={image.width}
-                height={image.height}
+                width="100%"
+                height="100%"
               >
                 {({ ref, open }) => (
                   <span
