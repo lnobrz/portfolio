@@ -1,3 +1,4 @@
+import { Item, items } from "@/data/portfolio";
 import strings from "@/data/strings";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,7 +37,7 @@ const ProjectsSliderSection = ({ currentId, itemsLength }: Props) => {
               data-aos="fade-right"
             >
               <Image
-                src="/images/media/img_92.jpg"
+                src={items[previousItem - 1].coverImage}
                 alt="media"
                 className="lazy-img w-100"
                 width={920}
@@ -63,7 +64,7 @@ const ProjectsSliderSection = ({ currentId, itemsLength }: Props) => {
               data-aos="fade-left"
             >
               <Image
-                src="/images/media/img_93.jpg"
+                src={items[nextItem - 1].coverImage}
                 alt="media"
                 className="lazy-img w-100"
                 width={820}
