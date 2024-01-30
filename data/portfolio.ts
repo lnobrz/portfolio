@@ -7,6 +7,7 @@ export type ProjectInfo = {
   detailsTitle: string;
   details: string[];
   finalResult: string[];
+  website: string;
 };
 
 export type ImageGallery = {
@@ -63,7 +64,7 @@ export const items: Item[] = [
       },
     ],
     projectInfo: {
-      date: "23 de Junho, 2023",
+      date: "06 de Junho, 2023",
       clientName: "RB Ferragens, Fortaleza/CE - Brasil",
       projectType: "UI/UX, Web Design",
       resume:
@@ -82,49 +83,56 @@ export const items: Item[] = [
         "O projeto da RB Ferragens culminou em um site único que reflete fielmente a essência do cliente. Sua entrada no mundo digital resultou em uma visibilidade significativa, atraindo novos clientes através de pesquisas online. O site não apenas cumpriu seu objetivo, mas também se destacou como uma vitrine digital para a empresa.",
         "Como meu primeiro projeto freelancer, o website da RB Ferragens foi uma jornada enriquecedora. Ele reforçou a importância da inclusão digital para pequenas empresas e a relevância do design na construção de softwares impactantes. Agradeço à RB Ferragens pela oportunidade de contribuir para sua transformação digital e por confiar em meu trabalho para dar este importante passo.",
       ],
+      website: "https://www.rbferragens.com.br",
     },
   },
   {
     id: 2,
-    category: "design marketing",
-    name: "Mobile Application",
-    tag: "Appliction",
-    coverImage: "/images/gallery/img_11.jpg",
+    category: "Desenvolvimento de Aplicativo",
+    name: "HP Smart",
+    tag: "Aplicação",
+    coverImage: "/images/gallery/hp-smart-4.webp",
     slide: [
-      "/images/gallery/img_10.jpg",
-      "/images/gallery/img_10.jpg",
-      "/images/gallery/img_10.jpg",
-      "/images/gallery/img_10.jpg",
+      "/images/gallery/hp-smart-1.webp",
+      "/images/gallery/hp-smart-2.webp",
+      "/images/gallery/hp-smart-3.webp",
     ],
     imageGallery: [
       {
-        src: "/images/media/img_89.jpg",
+        src: "/images/gallery/hp-smart-1.webp",
         width: 460,
         height: 400,
         alt: "media",
       },
       {
-        src: "/images/media/img_90.jpg",
+        src: "/images/gallery/hp-smart-3.webp",
         width: 460,
         height: 400,
         alt: "media",
       },
       {
-        src: "/images/media/img_91.jpg",
+        src: "/images/gallery/hp-smart-2.webp",
         width: 960,
         height: 510,
         alt: "media",
       },
     ],
     projectInfo: {
-      date: "23 July, 2020",
-      clientName: "Mariona Adisson, USA",
-      projectType: "UI/UX, Web Design",
-      resume: "",
-      about: [""],
-      detailsTitle: "",
-      details: [""],
-      finalResult: [""],
+      date: "06 de Março de 2022",
+      clientName: "Instituto Atlântico, Fortaleza/CE - Brasil",
+      projectType: "Desenvolvimento de Aplicativos, Front-end",
+      resume: "HP Smart: Renomada Aplicação de Impressão da HP",
+      about: [
+        "HP Smart, a aplicação líder mundial em impressão da HP, oferece uma experiência de usuário abrangente para os proprietários de impressoras HP. Esta aplicação não só facilita a impressão de documentos e a gestão de impressoras, mas também disponibiliza uma variedade de funcionalidades avançadas, como automação de tarefas de impressão, digitalização de documentos e edição de texto. Durante o período pandêmico, HP Smart emergiu como uma ferramenta essencial, contribuindo significativamente para a continuidade do trabalho remoto e apoiando inúmeras empresas em tempos desafiadores.",
+      ],
+      detailsTitle: "HP Smart: Inovação e Impacto Global",
+      details: [
+        "Desenvolver o HP Smart foi um desafio empolgante, envolvendo o uso de tecnologias de ponta como React, Typescript e Styled Components para a criação de interfaces, além de Jest e React Testing Library para testes unitários. O projeto destacou-se pela sua complexidade e base de usuários ativa em milhões. A minha jornada incluiu a colaboração com uma equipe multinacional e multifuncional, incluindo membros dos EUA e China, abrangendo designers, Product Owners, Scrum Masters e Technical Project Managers, todos trabalhando juntos sob a metodologia Scrum.",
+      ],
+      finalResult: [
+        "Ao longo de dois anos, entreguei várias interfaces com foco em responsividade, performance e aderência às melhores práticas de design. Meus esforços também se concentraram na resolução eficaz de inúmeros bugs e na elaboração de documentações de software detalhadas, bem como estudos sobre melhorias futuras para a aplicação. Contribuir para que o HP Smart se tornasse a principal aplicação de impressão do mundo foi uma experiência gratificante. Os feedbacks positivos dos usuários e stakeholders sobre o produto desenvolvido são extremamente recompensadores, e é um orgulho ver o impacto global da minha contribuição.",
+      ],
+      website: "https://www.hpsmart.com/",
     },
   },
   {
@@ -168,6 +176,7 @@ export const items: Item[] = [
       detailsTitle: "",
       details: [""],
       finalResult: [""],
+      website: "",
     },
   },
   {
@@ -211,6 +220,7 @@ export const items: Item[] = [
       detailsTitle: "",
       details: [""],
       finalResult: [""],
+      website: "",
     },
   },
   {
@@ -255,6 +265,7 @@ export const items: Item[] = [
       detailsTitle: "",
       details: [""],
       finalResult: [""],
+      website: "",
     },
   },
 ];
