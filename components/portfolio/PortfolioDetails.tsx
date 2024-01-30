@@ -12,6 +12,7 @@ import HeaderContainer from "@/components/home-page/Header/HeaderContainer";
 import { Item } from "@/data/portfolio";
 import PortfolioGallery from "./portfolio-details/PortfolioGallery/PortfolioGallery";
 import strings from "@/data/strings";
+import PortfolioLinks from "./PortfolioLinks";
 
 type Props = {
   portfolio: Item;
@@ -60,9 +61,9 @@ const PortfolioDetails = ({ portfolio, isLoading, length }: Props) => {
                 />
               </div>
             </div>
-            <CallToAction />
-            <Footer />
           </div>
+          <CallToAction />
+          <Footer />
         </>
       )}
     </>
