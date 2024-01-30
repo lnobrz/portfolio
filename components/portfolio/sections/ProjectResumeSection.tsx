@@ -1,7 +1,7 @@
 import { ProjectInfo } from "@/data/portfolio";
 import ProjectDetails from "../portfolio-details/ProjectDetails";
 import strings from "@/data/strings";
-import PortfolioLinks from "../PortfolioLinks";
+import WebsiteLink from "../WebsiteLink";
 
 const ProjectResumeSection = ({ details }: { details: ProjectInfo }) => {
   return (
@@ -12,7 +12,7 @@ const ProjectResumeSection = ({ details }: { details: ProjectInfo }) => {
         <div className="row">
           <ProjectDetails details={details} />
         </div>
-        <PortfolioLinks />
+        <WebsiteLink url={details.website} />
       </div>
     </div>
   );
